@@ -26,17 +26,28 @@ StudentsHub-Sprints/
 │   │   │   ├── org/sprints/data/repository/
 │   │   │   │   ├── StudentsRepository.kt
 │   │   │   │   ├── UsersRepository.kt
+│   │   │   ├── org/sprints/data/storage/
+│   │   │   │   ├── StudentStorage.kt
+│   │   │   │   ├── UserStorage.kt
 │   │   │   ├── org/sprints/domain/models/
 │   │   │   │   ├── Student.kt
+│   │   │   │   ├── User.kt
 │   │   │   ├── org/sprints/domain/repository/
 │   │   │   │   ├── StudentsRepository.kt
+│   │   │   │   ├── UsersRepository.kt
 │   │   │   ├── org/sprints/domain/usecases/
+│   │   │   │   ├── AddNewStudentUseCase.kt
+│   │   │   │   ├── DeleteStudentUseCase.kt
 │   │   │   │   ├── FilterStudentsUseCase.kt
 │   │   │   │   ├── GetAllStudentsUseCase.kt
 │   │   │   │   ├── LoginUseCase.kt
+│   │   │   │   ├── SignupUseCase.kt
 │   │   │   │   ├── UpdateStudentInfoUseCase.kt
 │   │   │   ├── org/sprints/ui/
 │   │   │   │   ├── MainScreen.kt
+│   │   │   │   ├── Options.kt
+│   │   │   ├── org/sprints/
+│   │   │   │   ├── Main.kt
 │   └── test/
 │       ├── kotlin/
 │           ├── (Test files, currently empty)
@@ -44,6 +55,10 @@ StudentsHub-Sprints/
 ├── settings.gradle.kts
 ├── README.md
 ```
+
+
+## Demo
+
 
 - **data/repository/**: Contains repository implementations (`StudentsRepository`, `UsersRepository`).
 - **domain/models/**: Data classes (e.g., `Student`).
