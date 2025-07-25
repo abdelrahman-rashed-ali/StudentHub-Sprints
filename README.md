@@ -57,7 +57,29 @@ StudentsHub-Sprints/
 ```
 
 
-## Demo
+# Demo
+
+## SignUp 
+![SignUp](GIF/SignUp.gif)
+
+## Add New Student 
+![AddStudent](GIF/AddStudent.gif)
+
+## Filtering
+### FilterByName
+![FilterByName](GIF/FilterByName.gif)
+### FilterByGrade
+![FilterByGrade](GIF/FilterByGrade.gif)
+### FilterByStatus
+![FilterByStatus](GIF/FilterByStatus.gif)
+### GPA range
+![FilteGPA](GIF/FilteGPA.gif)
+### AVG GPA
+![FilterAVG_GPA](GIF/FilterAVG_GPA.gif)
+### RemoveStudent & GetAll
+![RemoveStudent&ShowAll](GIF/RemoveStudent&ShowAll.gif)
+### Update
+![Update](GIF/Update.gif)
 
 
 - **data/repository/**: Contains repository implementations (`StudentsRepository`, `UsersRepository`).
