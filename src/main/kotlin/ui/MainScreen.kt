@@ -2,8 +2,8 @@ package org.sprints.ui
 
 import org.sprints.data.repository.StudentsRepository
 import org.sprints.data.repository.UsersRepository
-import org.sprints.domain.models.Student
-import org.sprints.domain.usecases.FilterStudentsUseCase
+import domain.models.Student
+import domain.usecases.FilterStudentsUseCase
 import org.sprints.domain.usecases.GetAllStudentsUseCase
 import org.sprints.domain.usecases.AddNewStudentUseCase
 import org.sprints.domain.usecases.DeleteStudentUseCase
@@ -20,6 +20,7 @@ class MainScreen {
     private var trials = 0
     private val getAllStudentsUseCase = GetAllStudentsUseCase(studentRepository)
     private val filterStudentsUseCase = FilterStudentsUseCase(studentRepository)
+    val averageGPA = filterStudentsUseCase.getAverageGPAOfPassedStudents()
     private val loginCase = LoginUseCase(usersRepository)
     private val updateStudentInfoUseCase = UpdateStudentInfoUseCase(studentRepository)
     private val addNewStudentUseCase = AddNewStudentUseCase(studentRepository)
@@ -29,28 +30,29 @@ class MainScreen {
     fun home() {
         println("Welcome to Students Management System")
         var signed = false
-        while(trials < 3){
-            if (!signed && !login()){
+        while (trials < 3) {
+            if (!signed && !login()) {
                 trials++
-                println("Wrong username or password \n" +
-                        "You have ${3 - trials} of your attempts!")
+                println(
+                    "Wrong username or password \n" +
+                            "You have ${3 - trials} of your attempts!"
+                )
                 println("1- Try again!    2- Sign Up")
                 val choice = readlnOrNull()
-                if(choice == "1"){
+                if (choice == "1") {
                     continue
-                }else if(choice == "2"){
-                    if(!signup()){
+                } else if (choice == "2") {
+                    if (!signup()) {
                         println("Sign Up failed")
                         println("Username and password must be unique")
-                    }else{
+                    } else {
                         signed = true
                     }
-                }
-                else{
+                } else {
                     println("Invalid choice")
                 }
-            }else{
-                while (true){
+            } else {
+                while (true) {
                     println(
                         """
                     please select what are you want to do : 
@@ -62,6 +64,7 @@ class MainScreen {
                     5 - Logout
                     """.trimIndent()
                     )
+                    print("▶ ")
                     val input = readlnOrNull()?.toIntOrNull()
                     val option = input?.let { Options.entries.getOrNull(it) }
 
@@ -87,16 +90,16 @@ class MainScreen {
 
     }
 
-    private fun signup() : Boolean{
+    private fun signup(): Boolean {
         println("please enter your username")
         val username = readlnOrNull()
         println("Enter your password")
         val password = readlnOrNull()
         if (username == null || password == null) return false
-        if(signupCase.signup(username, password)){
+        if (signupCase.signup(username, password)) {
             println("Signed up successfully")
             return true
-        }else{
+        } else {
             return false
         }
     }
@@ -193,7 +196,8 @@ class MainScreen {
         1 ▶ Filter by grade
         2 ▶ Filter by status
         3 ▶ Filter by GPA: e.g. (3 ≤..≤ 4)
-        4 ▶ Back ↺
+        4 ▶ Show average GPA pf passed students
+        5 ▶ Back ↺
         """.trimIndent()
         )
         val filterOp = readlnOrNull()?.toIntOrNull()
@@ -238,6 +242,15 @@ class MainScreen {
             }
 
             4 -> {
+                if (averageGPA == null) {
+                    println("No students with passing GPA (≥ 2.0) found.")
+                } else {
+                    println(String.format("Average GPA of passed students: %.2f", averageGPA))
+                }
+                return emptyList()
+            }
+
+            5 -> {
                 println("Returning to home ↺")
                 return emptyList()
             }

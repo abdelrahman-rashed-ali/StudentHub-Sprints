@@ -1,6 +1,6 @@
-package org.sprints.domain.usecases
+package domain.usecases
 
-import org.sprints.domain.models.Student
+import domain.models.Student
 import org.sprints.domain.repository.StudentsRepository
 
 class FilterStudentsUseCase(val repository: StudentsRepository) {
@@ -18,5 +18,16 @@ class FilterStudentsUseCase(val repository: StudentsRepository) {
 
     fun filterByGPA(minGPA: Double, maxGPA: Double): List<Student> {
         return repository.filterStudentsByGPA(minGPA, maxGPA)
+    }
+
+    fun getAverageGPAOfPassedStudents(): Double? {
+        val passingStudents = repository.getAllStudents().filter {
+            it.gpa != null && it.gpa >= 2.0
+        }
+        return if (passingStudents.isEmpty()) {
+            null
+        } else {
+            passingStudents.mapNotNull { it.gpa }.average()
+        }
     }
 }

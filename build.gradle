@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.9.10'
     id 'org.jetbrains.kotlin.plugin.serialization' version '1.9.10'
@@ -18,7 +20,7 @@ dependencies {
 }
 
 // ✅ Use Kotlin JVM 17 for compatibility
-tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+tasks.withType(KotlinCompile).configureEach {
     kotlinOptions {
         jvmTarget = "17"
     }
@@ -27,7 +29,8 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
 // ✅ Correct Toolchain config — let Gradle find JDK 17 via JAVA_HOME or registry
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
-        vendor.set(JvmVendorSpec.ADOPTIUM) // Optional: specify vendor if needed
+        languageVersion = JavaLanguageVersion.of(17)
+//        installationPath = file(System.getenv("JAVA_HOME"))
+//        vendor = JvmVendorSpec.ECLIPSE_ADOPTIUM // Optional: specify vendor if needed
     }
 }

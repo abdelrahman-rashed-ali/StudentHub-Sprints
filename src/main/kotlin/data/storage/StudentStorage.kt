@@ -2,7 +2,7 @@ package data.storage
 
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import org.sprints.domain.models.Student
+import domain.models.Student
 import java.io.File
 
 object StudentStorage {

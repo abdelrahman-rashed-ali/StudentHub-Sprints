@@ -1,6 +1,6 @@
 package org.sprints.domain.repository
 
-import org.sprints.domain.models.Student
+import domain.models.Student
 
 interface StudentsRepository {
     fun addStudent(student: Student) : Boolean

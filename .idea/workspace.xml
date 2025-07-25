@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a0deeba-9e4a-426c-97f1-718534b8debd" name="Changes" comment="deletestudent_usecase">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/data/storage/StudentStorage.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/students.json" afterDir="false" />
+    <list default="true" id="7a0deeba-9e4a-426c-97f1-718534b8debd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admins.json" beforeDir="false" afterPath="$PROJECT_DIR$/admins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/repository/StudentsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/repository/StudentsRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data/storage/StudentStorage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data/storage/StudentStorage.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/models/Student.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domain/models/Student.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/repository/StudentsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domain/repository/StudentsRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/usecases/AddNewStudentUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domain/usecases/AddNewStudentUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/usecases/FilterStudentsUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domain/usecases/FilterStudentsUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/usecases/GetAllStudentsUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domain/usecases/GetAllStudentsUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/usecases/UpdateStudentInfoUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domain/usecases/UpdateStudentInfoUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ui/MainScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ui/MainScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/students.json" beforeDir="false" afterPath="$PROJECT_DIR$/students.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +30,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="StudentsHub-Sprints" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,41 +72,79 @@
     &quot;assignee&quot;: &quot;mariamm2023&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/abdelrahman-rashed-ali/StudentHub-Sprints.git",
-    "accountId": "5392f8b6-8fba-4fe0-8641-105216d2ccbd"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/abdelrahman-rashed-ali/StudentHub-Sprints.git&quot;,
+    &quot;accountId&quot;: &quot;cf14edd8-d061-4ab1-a7e9-ae913a1787b7&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="30JRPdBPREkLYcZgqpO2avDx4o0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build StudentHub-Sprints.executor": "Run",
-    "Gradle.Build StudentHub-Sprints3.executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "Student-JSON",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build StudentHub-Sprints.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build StudentHub-Sprints3.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.StudentHub-Sprints [build].executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;init-project-without-usecases&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17773438&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Kotlin.MainKt">
+    <configuration name="StudentHub-Sprints [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="StudentsHub-Sprints.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,14 +154,12 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
-      </set>
-    </attachedChunks>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.StudentHub-Sprints [build]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

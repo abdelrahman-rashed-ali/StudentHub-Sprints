@@ -1,7 +1,7 @@
 package org.sprints.data.repository
 
 import data.storage.StudentStorage
-import org.sprints.domain.models.Student
+import domain.models.Student
 import org.sprints.domain.repository.StudentsRepository
 
 class StudentsRepository : StudentsRepository {
